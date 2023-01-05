@@ -1,5 +1,10 @@
-h1 { 
-    margin-left: 8vh;
-    margin-top: 8vh;
+.nameContainer { 
+    margin-left: 5vh;
+    margin-top: 5vh;
     margin-bottom: 1vh;
 }
+
+h1 {
+    font-size: 48px;
+}
+
