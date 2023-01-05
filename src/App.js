@@ -1,15 +1,16 @@
 import { Home, About, Contact, Projects } from './Pages'
-import { NamePlate, NavBar } from './components'
+
+import { Sidebar } from './layout'
 
 import './App.css';
 
 import { Routes, Route } from 'react-router-dom'
 
+
 function App() {
   return (
     <>
-      <NamePlate />
-      <NavBar />
+      <Sidebar />
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='About' element={<About />}></Route>

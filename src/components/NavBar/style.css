@@ -2,8 +2,10 @@
 
     display: flex;
     flex-direction: column;
-    margin-left: 9vh;
+    margin-left: 3vh;
     margin-top: 7vh;
+    max-width: 20vw;
+    max-height: 100vh;
 
 }
 

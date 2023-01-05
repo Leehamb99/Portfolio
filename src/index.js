@@ -9,10 +9,13 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    
-    <BrowserRouter>
+  <div className="wrapper">
+
+  <BrowserRouter>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>
+ </BrowserRouter>
+
+  </div>
+
+
 );
