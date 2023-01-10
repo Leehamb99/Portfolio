@@ -9,41 +9,58 @@ const NavBar = () => {
         ----
       </div>
       <div className='nav'>
+        <ul>
+          <li style = {{marginBottom :'7vh'}}>
         <NavLink to="/"
           style={({ isActive }) => ({
-            color: isActive ? '#fff' : '#545e6f',
-            background: isActive ? '#7600dc' : '#f0f0f0',
-            fontSize : '26px',
-            marginBottom : '5vh'
+            color: isActive ? '#fff' : 'black',
+            background: isActive ? 'black' : 'none',
+            textDecoration: isActive ? 'underline' : 'none',
+            fontSize : isActive ? '36px' : '24px',
+            marginBottom : '7vh'
           })}>
           Home
         </NavLink>
+          </li>
+          <li style = {{marginBottom :'7vh'}}>
         <NavLink to="/Projects"
           style={({ isActive }) => ({
-            color: isActive ? '#fff' : '#545e6f',
-            background: isActive ? '#7600dc' : '#f0f0f0',
-            fontSize : '26px',
-            marginBottom : '5vh',
-          })} >
-          Projects
-        </NavLink>
+            color: isActive ? '#fff' : '#000000',
+            background: isActive ? 'black' : 'none',
+            textDecoration: isActive ? 'underline' : 'none',
+            fontSize : isActive ? '36px' : '24px',
+            marginBottom : '7vh',
+          })} >Projects </NavLink>
+        </li>
+        <li style = {{marginBottom :'7vh'}}>
+
         <NavLink to="/About"
-          style={({ isActive }) => ({
-            color: isActive ? '#fff' : '#545e6f',
-            background: isActive ? '#7600dc' : '#f0f0f0',
-            fontSize : '26px',
-            marginBottom : '5vh',
+          style={({ isActive }) => ({ 
+            color: isActive ? '#fff' : 'black',
+            background: isActive ? 'black' : 'none',
+            textDecoration: isActive ? 'underline' : 'none',
+            fontSize : isActive ? '36px' : '24px',
+            marginBottom : '7vh',
           })}
-        >
-          About Me
+          >
+          About
         </NavLink>
+
+        </li>
+        <li style = {{marginBottom :'7vh'}}>
+        
+
         <NavLink to="/Contact"
           style={({ isActive }) => ({
-            color: isActive ? '#fff' : '#545e6f',
-            background: isActive ? '#7600dc' : '#f0f0f0',
-            fontSize : '26px',
-            marginBottom : '5vh',
-          })}> Contact Me </NavLink>
+            color: isActive ? '#fff' : 'black',
+            background: isActive ? 'black' : 'none', 
+            textDecoration: isActive ? 'underline' : 'none',
+            fontSize : isActive ? '36px' : '24px',
+            
+          })}>
+          Contact</NavLink>
+        </li>
+          </ul>
       </div>
     </>
   )

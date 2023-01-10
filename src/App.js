@@ -13,14 +13,15 @@ function App() {
     new Granim({
       element: "#logo-canvas",
       direction: "diagonal",
-      opacity: [1, 1],
+      opacity: [0.6, 0.9],
       states: {
         "default-state": {
           gradients: [
             ["#e3dddc", "#858181"],
-            ["#696666", "#cccaca"]
+            ["#696666", "#cccaca"],
+            ["#595757", "#e3dddc"]
           ],
-          transitionSpeed: 5000
+          transitionSpeed: 7000
         }
       }
     });
@@ -29,7 +30,9 @@ function App() {
     <div className="App">
     <div className="bloc-logo">
       <canvas id="logo-canvas"></canvas>
-      <div className="logo-mask">
+    <div className="logo-mask">
+      <div className="mainBorder">
+
       
 
       <Sidebar />
@@ -41,6 +44,7 @@ function App() {
         <Route path='Projects' element={<Projects />}></Route>
       </Routes>
           </div>
+         </div> 
         </div>
       </div>
     </div>
