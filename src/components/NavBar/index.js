@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <>
       <div className='divider'>
-        ----
+        
       </div>
       <div className='nav'>
         <ul>

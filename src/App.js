@@ -27,9 +27,8 @@ function App() {
     });
   });
   return (
-    <div className="App">
     <div className="bloc-logo">
-      <canvas id="logo-canvas"></canvas>
+    <canvas id="logo-canvas"></canvas>
     <div className="logo-mask">
       <div className="mainBorder">
 
@@ -47,7 +46,7 @@ function App() {
          </div> 
         </div>
       </div>
-    </div>
+
     
   );
 }
