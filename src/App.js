@@ -3,12 +3,14 @@ import { useEffect } from 'react';
 import Granim from 'granim';
 import { Sidebar } from './layout'
 
+
 import './App.css';
 
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation} from 'react-router-dom'
 
 
 function App() {
+  let location = useLocation();
   useEffect(() => {
     new Granim({
       element: "#logo-canvas",
@@ -26,6 +28,7 @@ function App() {
       }
     });
   });
+  
   return (
     <div className="bloc-logo">
     <canvas id="logo-canvas"></canvas>
@@ -33,9 +36,14 @@ function App() {
       <div className="mainBorder">
 
       
-
       <Sidebar />
+
+
+  
+
           <div className="wrapper2">
+          <div className="title">{(location.pathname.slice(1))}</div>
+            
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='About' element={<About />}></Route>
