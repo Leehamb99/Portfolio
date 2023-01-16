@@ -3,3 +3,14 @@
     display: none;
     
 }
+
+.cardHeader{
+    margin-bottom: 20px;
+}
+ 
+.cardFooter{
+    
+    text-justify: end;
+    margin-bottom: 10px;
+
+}

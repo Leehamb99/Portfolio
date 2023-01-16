@@ -1,10 +1,14 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poor+Story&family=Shadows+Into+Light&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
-* {
+body {
   margin: 0;
-  font-family: 'Shadows Into Light';
+  padding: 0;
+  font-family: 'Roboto Mono';
+  
 }
+
 
 
 .bloc-logo {
@@ -15,9 +19,11 @@
 }
 .bloc-logo canvas {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
+
 .logo-mask {
+  margin: 0;
   display: flex; 
   position: absolute;
   top: 0;
@@ -29,13 +35,13 @@
 .bloc-logo .wrapper2 {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 8vw;
-  margin-right: 8vw;
+
+  margin-left: 12vw;
+  margin-right: 12vw;
   margin-top: 10vh;
   margin-bottom: 10vh;
-  min-height: 80vh;
-  width: 35vw;
-  border: solid black 5px;
+  min-height: 70vh;
+  width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -43,9 +49,14 @@
 
 .bloc-logo .wrapper2 .title {
   text-align: center;
-  width: 35vw;
+  width: 100%;
   margin-bottom: 5vh;
   font-size: 36px;
+}
+
+.bloc-logo .wrapper2 .list {
+  margin: 0;
+  padding: 0;
 }
 
 .bloc-logo .mainBorder {

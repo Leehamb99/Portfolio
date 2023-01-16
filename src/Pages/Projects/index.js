@@ -33,10 +33,10 @@ const Projects = () => {
 
   return (
     <>
-      {Repos.map((repo, index) => {
+      {Repos.slice(0,12).map((repo, index) => {
         return (
-          <div className="list" onClick={() => { Hider(index) }}>
-            <ProjectCard key={index} name={repo.name} desc={repo.description}/>
+          <div className="list" key={index} onClick={() => { Hider(index) }}>
+            <ProjectCard name={repo.name} desc={repo.description} repoLink={repo.html_url}/>
           </div>
         )
       })}

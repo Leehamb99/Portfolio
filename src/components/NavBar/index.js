@@ -15,7 +15,7 @@ const NavBar = () => {
           style={({ isActive }) => ({
             color: isActive ? '#fff' : 'black',
             background: isActive ? 'black' : 'none',
-            textDecoration: isActive ? 'underline' : 'none',
+            textDecoration: 'none',
             fontSize : isActive ? '36px' : '24px',
             marginBottom : '7vh'
           })}>
@@ -27,7 +27,7 @@ const NavBar = () => {
           style={({ isActive }) => ({
             color: isActive ? '#fff' : '#000000',
             background: isActive ? 'black' : 'none',
-            textDecoration: isActive ? 'underline' : 'none',
+            textDecoration: 'none',
             fontSize : isActive ? '36px' : '24px',
             marginBottom : '7vh',
           })} >Projects </NavLink>
@@ -38,7 +38,7 @@ const NavBar = () => {
           style={({ isActive }) => ({ 
             color: isActive ? '#fff' : 'black',
             background: isActive ? 'black' : 'none',
-            textDecoration: isActive ? 'underline' : 'none',
+            textDecoration: 'none',
             fontSize : isActive ? '36px' : '24px',
             marginBottom : '7vh',
           })}
@@ -54,7 +54,7 @@ const NavBar = () => {
           style={({ isActive }) => ({
             color: isActive ? '#fff' : 'black',
             background: isActive ? 'black' : 'none', 
-            textDecoration: isActive ? 'underline' : 'none',
+            textDecoration: 'none',
             fontSize : isActive ? '36px' : '24px',
             
           })}>
