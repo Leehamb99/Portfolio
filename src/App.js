@@ -10,6 +10,7 @@ import { Routes, Route, useLocation} from 'react-router-dom'
 
 
 function App() {
+  var cards = document.querySelectorAll(".list")
   let location = useLocation();
   useEffect(() => {
     new Granim({

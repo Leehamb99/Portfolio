@@ -1,7 +1,5 @@
 .hidden{
-
     display: none;
-    
 }
 
 .cardHeader{
@@ -13,4 +11,33 @@
     text-justify: end;
     margin-bottom: 10px;
 
+}
+
+.front {
+    display: flex;
+    width: 100px;
+    height: 80px;
+    background-color:gray;
+    font-size: 18px;
+    color: black;
+    border-radius: 4px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 10px;
+}
+
+/* .back {
+    width: 100%;
+    text-align: center;
+    background: #212122;
+    font-size: 18px;
+    color: #BFBFBF;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+} */
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 11px rgba(33,33,33,0.6); 
 }
