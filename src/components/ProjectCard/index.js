@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { useEffect } from "react";
 
 import './style.css'
 
@@ -13,7 +12,7 @@ const ProjectCard = (props) => {
   var click = 0
   const Hider = (id) => {
     click++
-    if (click % 2 != 0) {
+    if (click % 2 !== 0) {
       for (let i = 0; i < front.length; i++) {
         front[i].classList.add("hidden")
       }
@@ -45,7 +44,7 @@ const ProjectCard = (props) => {
           {props.desc}
         </div>
         <div className="cardFooter">
-           <a target="_blank" href={props.repoLink}> <GitHubIcon style={{fontSize: '48px'}} /> </a>
+           <a target="_blank" rel="noreferrer" href={props.repoLink}> <GitHubIcon style={{fontSize: '48px'}} /> </a>
        </div>
       </div>
     </>
