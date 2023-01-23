@@ -1,60 +1,61 @@
 import React, { useState } from "react";
-import ReactCardFlip from "react-card-flip";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { useEffect } from "react";
 
 import './style.css'
 
 
+
+
 const ProjectCard = (props) => {
+  var front = document.getElementsByClassName('front')
+  var back = document.getElementsByClassName('back')
+  var click = 0
+  const Hider = (id) => {
+    click++
+    if (click % 2 != 0) {
+      for (let i = 0; i < front.length; i++) {
+        front[i].classList.add("hidden")
+      }
+      back[id].classList.remove("hidden")
 
 
-  const [flip, setFlip] = useState(false);
+
+    }
+    else {
+      for (let i = 0; i < front.length; i++) {
+        front[i].classList.remove("hidden")
+      }
+      back[id].classList.add("hidden")
+    }
+
+
+
+  }
+
   return (
-    <ReactCardFlip isFlipped={flip}
-      flipDirection="vertical"
-      flipSpeedBackToFront="0"
-      flipSpeedFrontToBack="0">
-      <div style={{
-        display: 'flex',
-        textAlign: 'flexStart',
-        flexWrap: 'wrap',
-        width: '100px',
-        height: '80px',
-        background: 'gray',
-        fontSize: '18px',
-        color: 'black',
-        borderRadius: '4px',
-        margin: '15px',
-        padding: '20px',
-        boxShadow: '10px',
-      }} onClick={() => setFlip(!flip)}>
+    <>
+      <div className="card front" onClick={() => Hider(props.cardId)}>
         {props.name}
       </div>
-      <div style={{
-        width: '500px',
-        height: '500px',
-        background: '#212121',
-        fontSize: '18px',
-        color: '#BFBFBF',
-        borderRadius: '4px',
-        textAlign: 'center',
-        padding: '20px',
-        boxShadow: '10px'
-      }} onClick={() => setFlip(!flip)}>
-        <div className="cardHeader">
-        Project Description :
-        </div>
 
+      <div className="card back hidden" onClick={() => Hider(props.cardId)}>
+        <div className="cardHeader"> {props.name} </div>
         <div>
-        {props.desc}
+          {props.desc}
         </div>
-        
         <div className="cardFooter">
-          <a target="_blank" href={props.repoLink}> <GitHubIcon style={{fontSize: '48px'}} /> </a>
-        </div>
+           <a target="_blank" href={props.repoLink}> <GitHubIcon style={{fontSize: '48px'}} /> </a>
+       </div>
       </div>
-    </ReactCardFlip>
-  );
+    </>
+  )
 }
+
+
+
+
+
+
 
 export default ProjectCard;
