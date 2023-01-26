@@ -12,7 +12,7 @@ body {
 
 
 .bloc-logo {
-  
+  margin: 0;
   height: 100vh;
   outline: 6px solid black;
   outline-offset: -40px;
@@ -28,6 +28,7 @@ body {
   position: absolute;
   top: 0;
   height: 100%;
+  width: 100vw;
   left: 0;
   background-size: contain;
 }
@@ -36,12 +37,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: start;
   margin-left: 12vw;
   margin-top: 10vh;
-  margin-bottom: 10vh;
-  max-height: 70vh;
-  width: 50vw;
+  margin-bottom: 1vh;
+  height: 70vh;
+  width: 60vw;
 }
 
 .bloc-logo .wrapper2 .title {
@@ -49,11 +50,25 @@ body {
   width: 100%;
   margin-bottom: 5vh;
   font-size: 36px;
+  opacity: 1;
 }
 
 .bloc-logo .wrapper2 .list {
   margin: 0;
   padding: 0;
+}
+
+.front {
+  display: flex;
+  width: 100px;
+  height: 80px;
+  background-color:gray;
+  font-size: 18px;
+  color: black;
+  border-radius: 4px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 10px;
 }
 
 .bloc-logo .wrapper2 .back {
@@ -70,9 +85,96 @@ body {
   display: flex;
 }
 
+.bloc-logo .wrapper2 .homeCard {
+  width: 80%;
+  align-self: start;
+  background: slateblue;
+  height: 40%;
+  opacity: 0.4;
+  border-radius: 10px;
+  box-shadow: 10px;
+  
+}
+
+.bloc-logo .wrapper2 .questionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  align-self: start;
+  background: slateblue;
+  height: 40%;
+  opacity: 0.4;
+  border-radius: 10px;
+  box-shadow: 30px;
+}
+
+.questionCard {
+  text-align: center;
+  font-size: center;
+  width: 30%;
+  margin: 10px;
+  height: 80%;
+  background: slategray;
+}
 
 .hidden{
 
   display: none;
   
+  }
+
+  .bloc-logo .wrapper2 .homeCard .cardContent {
+
+    margin: 5%;
+    text-align: center;
+
+  }
+
+
+  @media only screen and (max-width: 768px) {
+
+    .bloc-logo .wrapper2 .title{
+      font-size: 20px;
+    }
+    .nav
+     {
+      font-size: 16px;
+      margin-left: 7vw;
+    }
+
+    .divider {
+      border-bottom: solid black 3px;
+      margin-left: 10vw;
+      width: 25vw;
+    }
+
+    .nameContainer {
+      margin-top: 3vh;
+     
+    }
+    h1 {
+      font-size: 20px;
+    }
+    
+    .bloc-logo {
+      outline: 3px solid black;
+      outline-offset: -10px;
+      
+    }
+
+    .bloc-logo .wrapper2 .back{
+      font-size: 16px;
+      width: 30vw;
+    }
+    .front {
+      justify-content: center;
+      width: 200px;
+      height: 20px;
+      font-size: 16px;
+      margin: 10px;
+      padding: 15px;
+      box-shadow: 10px;
+  }
   }

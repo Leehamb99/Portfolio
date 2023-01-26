@@ -1,6 +1,11 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poor+Story&family=Shadows+Into+Light&display=swap');
 
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
  /* .wrapper {
   display: flex;
   font-family: 'Shadows Into Light';
