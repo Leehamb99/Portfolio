@@ -11,6 +11,7 @@ import { Routes, Route, useLocation} from 'react-router-dom'
 
 function App() {
   let location = useLocation();
+  let where = location.pathname.slice(1)
   useEffect(() => {
     new Granim({
       element: "#logo-canvas",
@@ -42,7 +43,8 @@ function App() {
   
 
           <div className="wrapper2">
-          <div className="title">{(location.pathname.slice(1))}</div>
+         {where ? <h1 className="title"> {where} </h1> :
+          <h1 className="title"> Welcome!</h1>}
             
       <Routes>
         <Route path='/' element={<Home />}></Route>
