@@ -10,6 +10,7 @@ import { Routes, Route, useLocation} from 'react-router-dom'
 
 
 function App() {
+  
   let location = useLocation();
   let where = location.pathname.slice(1)
   useEffect(() => {
