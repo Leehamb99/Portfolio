@@ -28,6 +28,8 @@
   }
 
   .qfront {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(245, 222, 178,0.35);
     text-align: center;
     justify-content: center;
