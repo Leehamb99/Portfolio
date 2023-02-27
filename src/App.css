@@ -62,7 +62,9 @@ body {
   display: flex;
   width: 100px;
   height: 80px;
+  background-color:gray;
   font-size: 18px;
+  color: rgb(64, 63, 63);
   border-radius: 4px;
   margin: 15px;
   padding: 20px;
@@ -71,7 +73,9 @@ body {
 
 .bloc-logo .wrapper2 .back {
   width: 40vw;
+  background: #656161;
   font-size: 18px;
+  color: #050505;
   border-radius: 4px;
   text-align: center;
   padding: 20px;
@@ -112,6 +116,7 @@ body {
   width: 30%;
   margin: 10px;
   height: 80%;
+  background: rgb(21, 117, 214);
 }
 
 .hidden{
