@@ -62,9 +62,7 @@ body {
   display: flex;
   width: 100px;
   height: 80px;
-  background-color:gray;
   font-size: 18px;
-  color: black;
   border-radius: 4px;
   margin: 15px;
   padding: 20px;
@@ -73,9 +71,7 @@ body {
 
 .bloc-logo .wrapper2 .back {
   width: 40vw;
-  background: #212122;
   font-size: 18px;
-  color: #BFBFBF;
   border-radius: 4px;
   text-align: center;
   padding: 20px;
@@ -88,9 +84,9 @@ body {
 .bloc-logo .wrapper2 .homeCard {
   width: 80%;
   align-self: start;
-  background: slateblue;
+  background: rgb(96, 93, 93);
   height: 40%;
-  opacity: 0.4;
+  opacity: 0.8;
   border-radius: 10px;
   box-shadow: 10px;
   
@@ -103,9 +99,9 @@ body {
   align-items: center;
   width: 80%;
   align-self: start;
-  background: slateblue;
+  background: rgb(96, 93, 93);
   height: 40%;
-  opacity: 0.4;
+  opacity: 0.8;
   border-radius: 10px;
   box-shadow: 30px;
 }
@@ -116,7 +112,6 @@ body {
   width: 30%;
   margin: 10px;
   height: 80%;
-  background: slategray;
 }
 
 .hidden{
@@ -135,6 +130,19 @@ body {
 
 
   }
+
+  .AboutContent {
+    width: 80%;
+    background: #897ed3;
+    box-shadow: 30px;
+    border-radius: 10px;
+
+  }
+
+  .AboutContent > p {
+    margin: 10px;
+  }
+
 
 
   @media only screen and (max-width: 768px) {

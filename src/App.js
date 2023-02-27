@@ -1,4 +1,4 @@
-import { Home, About, Contact, Projects } from './Pages'
+import { Home, About, Game, Projects } from './Pages'
 import { useEffect } from 'react';
 import Granim from 'granim';
 import { Sidebar } from './layout'
@@ -50,7 +50,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='About' element={<About />}></Route>
-        <Route path='Contact' element={<Contact />}></Route>
+        <Route path='Game' element={<Game />}></Route>
         <Route path='Projects' element={<Projects />}></Route>
       </Routes>
           </div>
