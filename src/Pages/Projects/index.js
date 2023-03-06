@@ -31,6 +31,8 @@ const Projects = () => {
 
   return (
     <>
+    <div className="projectContainer">
+
       {Repos.map((repo, index) => {
         return (
           <div key={index} >
@@ -38,6 +40,8 @@ const Projects = () => {
           </div>
         )
       })}
+      
+    </div>
     </>
   )
 
