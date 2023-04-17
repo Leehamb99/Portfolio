@@ -31,13 +31,17 @@ const Projects = () => {
 
   return (
     <>
+    <div className="projectContainer">
+
       {Repos.map((repo, index) => {
         return (
           <div key={index} >
-            <ProjectCard cardId={index} name={repo.name} desc={repo.description} repoLink={repo.html_url}/>
+            <ProjectCard cardId={index} name={repo.name} desc={repo.description} repoLink={repo.html_url} deployedAt={repo.homepage} />
           </div>
         )
       })}
+      
+    </div>
     </>
   )
 

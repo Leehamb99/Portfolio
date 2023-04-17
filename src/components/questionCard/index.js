@@ -1,14 +1,18 @@
 import React from 'react'
 import './style.css'
 
-const QuestionCard = () => {
+const QuestionCard = (props) => {
+  console.log(props.questionData)
+
+
+
+  
   return (
-    <div class="qcontainer">
-    <div class="qcard">
-      <div class="qfront"> Some Answer</div>
-      <div class="qback">
-        <h1>Wrong</h1>
-        <p>More</p>
+    <div className="qcontainer">
+    <div className="qcard">
+      <div className="qfront"> {props.answer === props.a ? props.questionData.correct_answer : props.questionData.incorrect_answers[props.answer]} </div>
+      <div className="qback" style={{backgroundColor: props.answer === props.a ? "green" : "red"}}>
+        <h2>{props.answer === props.a ? <div>Correct!</div> : <div>Incorrect </div>}</h2>
       </div>
     </div>
   </div>

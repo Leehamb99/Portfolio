@@ -50,7 +50,7 @@ const NavBar = () => {
         <li style = {{marginBottom :'7vh'}}>
         
 
-        <NavLink to="/Contact"
+        <NavLink to="/Game"
           style={({ isActive }) => ({
             color: isActive ? '#fff' : 'black',
             background: isActive ? 'black' : 'none', 
@@ -58,7 +58,7 @@ const NavBar = () => {
             // fontSize : isActive ? '36px' : '24px',
             
           })}>
-          Contact</NavLink>
+          Game</NavLink>
         </li>
           </ul>
       </div>

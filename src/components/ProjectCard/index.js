@@ -1,5 +1,6 @@
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LanguageIcon from '@mui/icons-material/Language';
 
 import './style.css'
 
@@ -44,7 +45,9 @@ const ProjectCard = (props) => {
           {props.desc}
         </div>
         <div className="cardFooter">
-           <a target="_blank" rel="noreferrer" href={props.repoLink}> <GitHubIcon style={{fontSize: '48px'}} /> </a>
+           <a target="_blank" rel="noreferrer" href={props.repoLink}><GitHubIcon style={{fontSize: '48px'}}/></a>
+            {props.deployedAt ? (  <a target="_blank" rel="noreferrer" href={props.deployedAt}> <LanguageIcon style={{fontSize: '48px'}}/></a> ) : (<></>)}
+           
        </div>
       </div>
     </>
