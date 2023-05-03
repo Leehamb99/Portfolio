@@ -60,8 +60,8 @@ body {
 
 .front {
   display: flex;
-  width: 100px;
-  height: 80px;
+  width: 10vw;
+  height: 8vh;
   background-color:gray;
   font-size: 18px;
   color: rgb(64, 63, 63);
@@ -167,6 +167,18 @@ body {
 
 
   @media only screen and (max-width: 768px) {
+  
+    .projectContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .bloc-logo .wrapper2 .questionContainer {
+      display: flex;
+      flex-direction: column;
+    }
 
     .bloc-logo .wrapper2 .title{
       font-size: 20px;
@@ -175,6 +187,13 @@ body {
      {
       font-size: 16px;
       margin-left: 7vw;
+    }
+    h2 {
+      font-size: 16px;
+    }
+
+    .cardContent {
+      font-size: 14px;
     }
 
     .divider {

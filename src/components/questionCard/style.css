@@ -1,8 +1,8 @@
 .qcontainer {
-    width: 30%;
-    height: 80%;
-    /* perspective: 800px; */
-  }
+  width: 30%;
+  height: 80%;
+  /* perspective: 800px; */
+}
   
   .qcontainer:hover > .qcard {
     cursor: pointer;
@@ -46,4 +46,15 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .qfront, .qback {
+      font-size: 14px;
+    }
+
+    .qcontainer{
+      width: 80%
+    }
+
   }
