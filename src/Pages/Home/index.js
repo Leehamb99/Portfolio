@@ -31,13 +31,15 @@ const Home = () => {
      return (
 <>
 
-    
+      
 
     <div className='homeCard'>
       <RefreshIcon onClick={QuestionGetter}/>
     <div className='cardContent'>
       <h2> Let's quickly test your tech knowledge! </h2>
-      {questions.question}
+      <h2>
+        {questions.question}
+        </h2>
     </div>
 
     </div>
